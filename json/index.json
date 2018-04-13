@@ -1,0 +1,30 @@
+{
+    "pepole":[
+        {
+            "name":"le xuan loc",
+            "age":20
+        },
+        {
+            "name":"nguyen van b",
+            "age":3
+        }
+        ,{
+            "name":"hoang van nhat",
+            "age":2
+        }
+    ],
+    "email":[
+        {
+            "username":"loc@gamil.com",
+            "password":"123"
+        },
+        {
+            "username":"b@gamil.com",
+            "password":"234"
+        },
+        {
+            "username":"nhat@gamil.com",
+            "password":"567"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="data">
+    </ul>
+    <ul id="pass"></ul>
+    <script>
+        var xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    var mydata=JSON.parse(this.responseText);
+                    
+                    var email=mydata.email;
+                    var password=mydata.password;
+
+                    var output='';
+                    var pass='';
+                    for(var i=0;i<email.length;i++){
+                        output+='<li>'+email[i].username+'</li>';
+                        pass+='<li>'+email[i].password+'</li>';
+
+                    }
+                    document.getElementById('data').innerHTML=output;
+                    document.getElementById('pass').innerHTML=pass;
+                }
+            }
+            xhttp.open('GET','index.json',true);
+            xhttp.send()
+        
+    </script>
+</body>
+</html>
