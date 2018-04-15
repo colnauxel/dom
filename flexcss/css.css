@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    
+}
+.container div{
+    border: 1px #ccc solid;
+    padding: 15px;
+}
+.box-1{
+    display: flex;
+width: 20%;
+}
+.box-2{
+ 
+    width: 20%;
+}
+.box-3{
+
+    width: 20%;
+}
+@media(max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
