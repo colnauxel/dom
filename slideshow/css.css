@@ -3,37 +3,44 @@
     padding: 0px;
 }
 
-#box,.slide{
+
+#slider{
+    /* position: relative; */
     width: 1000px;
-    height:500px;
-    box-shadow: 0px 0px 15px 1px  rgb(130, 134, 130);
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px  rgb(130, 134, 130);
     margin: auto;
-   
-    position: relative;
-    /* overflow-x: hidden; */
-    
 }
+
 .active{
     background: indianred;
     color: honeydew
 }
-.slide{
-    display: none;
-  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+
+#slider ul li img{
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
-.item1{background-image: url('img/img1.jpg')}
-.item2{background-image: url('img/img2.jpeg')}
-.item3{background-image: url('img/img3.jpeg')}
-.item4{background-image: url('img/img4.jpeg')}
-.item5{background-image: url('img/img5.jpeg')}
-.content{
+#slider ul {
+    position: relative;
+    height: 100%;
+    width: 2000%;
+    transition: 1s ease-in-out all;
+    left: 0;
+    display: flex;
+}
+#slide ul li{
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    float: left;
+
+}
 
     
-}
+
 li{
     list-style-type: none;
 }
@@ -72,12 +79,12 @@ a{
     font-size: 30px;
 }
 
-ul li{
+#page li{
     padding: 5px;
     display: inline;
     margin: 0px 15px;
 }
-ul li .item{
+#page li .item{
     
     padding: 3px 7px;
     border-radius: 20px;
