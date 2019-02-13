@@ -90,3 +90,26 @@ header{
 .highlight{
     color: darkcyan;
 }
+/* section-2 */
+#section-2{
+    margin-top:25px;
+}
+#section-2 .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+#section-2 .container img{
+    width: 160px;
+    height: 160px;
+}
+#section-2 .container h3{
+    margin-top:10px;
+}
+/* footer */
+#footer{
+    background-color: darkcyan;
+}
+
+
